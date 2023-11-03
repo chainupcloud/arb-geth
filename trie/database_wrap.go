@@ -22,11 +22,11 @@ import (
 	"time"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/trie/triedb/hashdb"
-	"github.com/ethereum/go-ethereum/trie/trienode"
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/ethdb"
+	"github.com/chainupcloud/arb-geth/log"
+	"github.com/chainupcloud/arb-geth/trie/triedb/hashdb"
+	"github.com/chainupcloud/arb-geth/trie/trienode"
 )
 
 // Config defines all necessary options for database.

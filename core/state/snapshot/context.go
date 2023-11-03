@@ -22,12 +22,12 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/common/math"
+	"github.com/chainupcloud/arb-geth/core/rawdb"
+	"github.com/chainupcloud/arb-geth/ethdb"
+	"github.com/chainupcloud/arb-geth/ethdb/memorydb"
+	"github.com/chainupcloud/arb-geth/log"
 )
 
 const (

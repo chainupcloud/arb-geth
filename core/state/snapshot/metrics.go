@@ -16,7 +16,7 @@
 
 package snapshot
 
-import "github.com/ethereum/go-ethereum/metrics"
+import "github.com/chainupcloud/arb-geth/metrics"
 
 // Metrics in generation
 var (

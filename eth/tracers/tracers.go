@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/core/vm"
 )
 
 // Context contains some contextual infos for a transaction execution that is not

@@ -1,4 +1,4 @@
-module github.com/ethereum/go-ethereum
+module github.com/chainupcloud/arb-geth
 
 go 1.19
 

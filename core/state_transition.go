@@ -21,11 +21,11 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	cmath "github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/chainupcloud/arb-geth/common"
+	cmath "github.com/chainupcloud/arb-geth/common/math"
+	"github.com/chainupcloud/arb-geth/core/types"
+	"github.com/chainupcloud/arb-geth/core/vm"
+	"github.com/chainupcloud/arb-geth/params"
 )
 
 // ExecutionResult includes all output after executing given evm

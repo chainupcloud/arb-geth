@@ -21,12 +21,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/common/math"
+	"github.com/chainupcloud/arb-geth/core/rawdb"
+	"github.com/chainupcloud/arb-geth/core/state"
+	"github.com/chainupcloud/arb-geth/core/types"
+	"github.com/chainupcloud/arb-geth/params"
 )
 
 var loopInterruptTests = []string{

@@ -39,24 +39,24 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/ethstats"
-	"github.com/ethereum/go-ethereum/internal/version"
-	"github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/chainupcloud/arb-geth/accounts"
+	"github.com/chainupcloud/arb-geth/accounts/keystore"
+	"github.com/chainupcloud/arb-geth/cmd/utils"
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/core"
+	"github.com/chainupcloud/arb-geth/core/types"
+	"github.com/chainupcloud/arb-geth/eth/downloader"
+	"github.com/chainupcloud/arb-geth/eth/ethconfig"
+	"github.com/chainupcloud/arb-geth/ethclient"
+	"github.com/chainupcloud/arb-geth/ethstats"
+	"github.com/chainupcloud/arb-geth/internal/version"
+	"github.com/chainupcloud/arb-geth/les"
+	"github.com/chainupcloud/arb-geth/log"
+	"github.com/chainupcloud/arb-geth/node"
+	"github.com/chainupcloud/arb-geth/p2p"
+	"github.com/chainupcloud/arb-geth/p2p/enode"
+	"github.com/chainupcloud/arb-geth/p2p/nat"
+	"github.com/chainupcloud/arb-geth/params"
 	"github.com/gorilla/websocket"
 )
 
@@ -463,7 +463,7 @@ func (f *faucet) apiHandler(w http.ResponseWriter, r *http.Request) {
 			id = username
 		default:
 			//lint:ignore ST1005 This error is to be displayed in the browser
-			err = errors.New("Something funky happened, please open an issue at https://github.com/ethereum/go-ethereum/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/chainupcloud/arb-geth/issues")
 		}
 		if err != nil {
 			if err = sendError(wsconn, err); err != nil {

@@ -24,17 +24,17 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/consensus"
+	"github.com/chainupcloud/arb-geth/consensus/misc"
+	"github.com/chainupcloud/arb-geth/core"
+	"github.com/chainupcloud/arb-geth/core/state"
+	"github.com/chainupcloud/arb-geth/core/types"
+	"github.com/chainupcloud/arb-geth/event"
+	"github.com/chainupcloud/arb-geth/log"
+	"github.com/chainupcloud/arb-geth/params"
+	"github.com/chainupcloud/arb-geth/trie"
 	mapset "github.com/deckarep/golang-set/v2"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
 )
 
 const (
@@ -1181,7 +1181,7 @@ func (w *worker) commit(env *environment, interval func(), update bool, start ti
 			interval()
 		}
 		// Create a local environment copy, avoid the data race with snapshot state.
-		// https://github.com/ethereum/go-ethereum/issues/24299
+		// https://github.com/chainupcloud/arb-geth/issues/24299
 		env := env.copy()
 		// Withdrawals are set to nil here, because this is only called in PoW.
 		block, err := w.engine.FinalizeAndAssemble(w.chain, env.header, env.state, env.txs, env.unclelist(), env.receipts, nil)

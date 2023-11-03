@@ -28,11 +28,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
+	"github.com/chainupcloud/arb-geth/core"
+	"github.com/chainupcloud/arb-geth/core/rawdb"
+	"github.com/chainupcloud/arb-geth/core/types"
+	"github.com/chainupcloud/arb-geth/core/vm"
+	"github.com/chainupcloud/arb-geth/eth/tracers/logger"
 )
 
 func TestState(t *testing.T) {

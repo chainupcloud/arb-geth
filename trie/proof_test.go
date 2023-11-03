@@ -25,10 +25,10 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/core/rawdb"
+	"github.com/chainupcloud/arb-geth/crypto"
+	"github.com/chainupcloud/arb-geth/ethdb/memorydb"
 )
 
 // Prng is a pseudo random number generator seeded by strong randomness.

@@ -19,10 +19,10 @@ package les
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/les/downloader"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/core/rawdb"
+	"github.com/chainupcloud/arb-geth/les/downloader"
+	"github.com/chainupcloud/arb-geth/log"
 )
 
 // synchronise tries to sync up our local chain with a remote peer.

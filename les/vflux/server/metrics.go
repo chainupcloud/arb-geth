@@ -17,7 +17,7 @@
 package server
 
 import (
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/chainupcloud/arb-geth/metrics"
 )
 
 var (

@@ -27,12 +27,12 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/chainupcloud/arb-geth/common"
+	"github.com/chainupcloud/arb-geth/ethdb"
+	"github.com/chainupcloud/arb-geth/log"
+	"github.com/chainupcloud/arb-geth/metrics"
 	"github.com/cockroachdb/pebble"
 	"github.com/cockroachdb/pebble/bloom"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
 )
 
 const (
@@ -187,7 +187,7 @@ func New(file string, cache int, handles int, namespace string, readonly bool) (
 			WriteStallEnd:   db.onWriteStallEnd,
 		},
 	}
-	// Disable seek compaction explicitly. Check https://github.com/ethereum/go-ethereum/pull/20130
+	// Disable seek compaction explicitly. Check https://github.com/chainupcloud/arb-geth/pull/20130
 	// for more details.
 	opt.Experimental.ReadSamplingMultiplier = -1
 

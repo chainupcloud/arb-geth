@@ -19,11 +19,11 @@ package core
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/chainupcloud/arb-geth/consensus"
+	"github.com/chainupcloud/arb-geth/core/state"
+	"github.com/chainupcloud/arb-geth/core/types"
+	"github.com/chainupcloud/arb-geth/params"
+	"github.com/chainupcloud/arb-geth/trie"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

@@ -24,13 +24,13 @@ import (
 	"net"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations/pipes"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/chainupcloud/arb-geth/event"
+	"github.com/chainupcloud/arb-geth/log"
+	"github.com/chainupcloud/arb-geth/node"
+	"github.com/chainupcloud/arb-geth/p2p"
+	"github.com/chainupcloud/arb-geth/p2p/enode"
+	"github.com/chainupcloud/arb-geth/p2p/simulations/pipes"
+	"github.com/chainupcloud/arb-geth/rpc"
 	"github.com/gorilla/websocket"
 )
 

@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/chainupcloud/arb-geth/internal/cmdtest"
+	"github.com/chainupcloud/arb-geth/rpc"
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/rpc"
 )
 
 type testgeth struct {

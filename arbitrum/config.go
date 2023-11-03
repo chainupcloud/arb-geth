@@ -3,8 +3,8 @@ package arbitrum
 import (
 	"time"
 
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/chainupcloud/arb-geth/eth/ethconfig"
+	"github.com/chainupcloud/arb-geth/params"
 	flag "github.com/spf13/pflag"
 )
 
